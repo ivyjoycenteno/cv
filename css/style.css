@@ -1,0 +1,433 @@
+@charset "utf-8";
+html {
+ overflow-x:hidden;
+ padding:0;
+ margin:0
+}
+body {
+ font-family:mulish;
+ font-size:15px;
+ line-height:30px;
+ letter-spacing:.5px;
+ word-wrap:break-word;
+ font-weight:400;
+ background-color:#fff;
+ color:#767676
+}
+body::-webkit-scrollbar {
+ width:0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: montserrat;
+    /* color: #252b2b; */
+    color: #000;
+}
+
+svg {
+ fill:currentcolor;
+ width:15px;
+ height:15px
+}
+img.svg {
+ width:15px;
+ height:15px
+}
+
+.mn-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+}
+
+.mn-wrap .mn-flex {
+    display: flex;
+}
+
+.mn-wrap .mn-horizontal {
+    flex-direction: row;
+}
+
+.mn-wrap .nav-mobile {
+    display: none;
+}
+
+.mn-wrap .grey-dark {
+    color: #484848;
+}
+
+.mn-wrap .dark {
+    color: #484848;
+}
+
+.mn-wrap ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mn-wrap .space-bottom {
+    margin-bottom: 1rem;
+} 
+
+.mn-wrap .space-bottom-sub {
+    margin-bottom: .5rem;
+} 
+
+.mn-wrap .l-panel {
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 12;
+    /* padding: 0 100px; */
+    background-color: #fff;
+}
+
+.mn-wrap .l-panel-inner {
+    width: 100%;
+    height: auto;
+}
+
+.mn-wrap .mn-wrap-pad {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.mn-wrap .mn-wrap-space-top {
+    padding-top: 3em;
+}
+
+.mn-wrap .mn-pad-top {
+    padding-top: 1em;
+}
+
+.mn-wrap .mn-margin-r {
+    margin-right: 1rem;
+}
+
+.mn-wrap .mn-no-space-top {
+    margin-top: 0;
+}
+
+.mn-wrap .card {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    transition: all .2s ease-out;
+}
+
+.mn-wrap ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.mn-wrap .l-panel .menu {
+    padding-left: 3rem;
+    position: relative;
+}
+
+/* .mn-wrap .l-panel .menu ul li a:hover { */
+
+.mn-wrap .l-panel a:active {
+    color: #000;
+}
+.mn-wrap a:hover {
+    color: #7dc3ae;
+}
+
+.mn-wrap a {
+/* .mn-wrap .nav-mobile .mn-mobile-menu .menu a,
+.mn-wrap .l-panel .menu a { */
+    text-decoration: none;
+    color: #767676;
+    display: inline-block;
+    font-weight: 500;
+    font-family: montserrat;
+    transition: all .3s ease;
+}
+/* .mn-wrap .l-panel .menu ul li a:active,
+.mn-wrap .l-panel .menu ul li a.active {
+    color: #000;
+    letter-spacing: 2px;
+    cursor: default;
+} */
+
+.mn-wrap .r-panel {
+    width: 75%;
+    min-height: 100vh;
+    float: right;
+    position: relative;
+    background-color: #d5e1de82;
+    /* background-color: #f8f8f8; */
+}
+
+.mn-wrap .r-panel .copyright {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.mn-wrap .r-panel .r-panel-inner {
+    width: 100%;
+}
+
+.mn-wrap .r-panel .container {
+    max-width: 968px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 0 40px;
+    position: relative;
+    clear: both;
+}
+
+.mn-wrap .home_content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+.mn-wrap .r-panel .avatar { 
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 100%;
+}
+
+.mn-wrap .r-pane-home {
+    width: 100%;
+    min-height: 100vh;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mn-wrap .image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mn-wrap .r-panel .r-pane-home .avatar .image {
+    background-size: cover;
+    animation: morph 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    -webkit-box-shadow: inset 0 0 0 9px rgba(255,255,255,.3);
+    -moz-box-shadow: inset 0 0 0 9px rgba(255,255,255,.3);
+    box-shadow: inset 0 0 0 9px rgba(255,255,255,.3)
+}
+@keyframes morph {
+0% {
+    border-radius:60% 40% 30% 70%/60% 30% 70% 40%
+}
+50% {
+    border-radius:30% 60% 70% 40%/50% 60% 30% 60%
+}
+100% {
+    border-radius:60% 40% 30% 70%/60% 30% 70% 40%
+}
+}
+.mn-wrap .home_content .details {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mn-wrap .home_content .details .name {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.mn-wrap .home_content .details .job {
+    font-family: montserrat;
+    /* font-style: italic; */
+    font-weight: 500;
+    max-width: 450px;
+    font-size: 20px;
+}
+.mn-wrap .home_content .details .social ul {
+    padding-left: 2px;
+}
+
+.mn-wrap .home_content .details .social ul li {
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.mn-wrap .home_content .details .social ul li a{
+    text-decoration: none;
+    color: currentColor;
+    font-size: 20px;
+}
+
+.mn-wrap .r-panel .r-panel-inner .about .wrap-desc{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.mn-wrap .r-panel .about .skills ul {
+    /* display: flex; */
+}
+
+.mn-wrap .mn-wrap-highlight {
+    /* background-color: #aaccbf; */
+    background-color: #66c4a647;
+}
+
+.mn-wrap .r-panel .r-panel-inner .about .wrap-skills ul li {
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    padding: 3rem .8rem 1.5rem;
+    margin: 3px;
+    width: 13%;
+    min-width: 97px;
+    border-radius: 2%;
+}
+
+.mn-wrap .r-panel .r-panel-inner .about .skills li i {
+    font-size: 2.5rem;
+    color: #767676;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.mn-wrap .r-panel .r-panel-inner .about .skills li i::before {
+    background-color: #c4e4da2e;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.mn-wrap .r-panel .r-panel-inner .experience .logo,
+.mn-wrap .r-panel .r-panel-inner .education .logo {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+}
+.mn-wrap .r-panel .r-panel-inner .experience .container,
+.mn-wrap .r-panel .r-panel-inner .education .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mn-wrap .r-panel .r-panel-inner .experience .box {
+    width: 25%;
+    padding: 2rem;
+}
+
+.mn-wrap .r-panel .r-panel-inner .education .box {
+    width: 50%;
+    padding: 2rem;
+}
+
+.mn-wrap .r-panel .r-panel-inner .portfolio li .image {
+    background-image: url("img/f2x.png");
+    width: 17rem;
+    position: relative;
+    height: 10rem;
+}
+
+.mn-wrap .r-panel .r-panel-inner .portfolio li.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mn-wrap .r-panel .r-panel-inner .portfolio li.tech-stack .card {
+    padding: 1 .5rem;
+    background: #ffffff4f;
+    border-radius: 5%;
+}
+
+
+
+/* mobile */
+.mn-wrap .nav-mobile .mn_topbar {
+    text-align: right;
+    position: relative;
+    border-bottom: 1px solid #e9f0ee;
+}
+
+.mn-wrap .nav-mobile .mn_topbar .hamburger i {
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.mn-wrap .nav-mobile .mn-mobile-menu {
+    position: absolute;
+    top: 57px;
+    display: none;
+    z-index: 999;
+    right: 0;
+    background: #fff;
+    width: 100%;
+}
+
+.mn-wrap .nav-mobile .mn-mobile-menu .menu ul {
+    padding: 1.5rem;
+}
+
+.mn-wrap .nav-mobile .mn-mobile-menu .menu ul li{
+    padding: .5rem;
+}
+
+@media(max-width: 768px) { 
+    .mn-wrap .nav-mobile {
+        display: block;
+    }
+
+    .mn-wrap .l-panel {
+        display: none;
+    }
+
+    .mn-wrap .r-panel {
+        width: 100%;
+        float: left;
+    }
+
+    .mn-wrap .home_content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .mn-wrap .home_content .details {
+        margin-left: 0;
+    }
+
+    .mn-wrap .r-panel .container {
+        padding: 0;
+    }
+
+    .mn-wrap .r-panel .r-panel-inner .experience .container, 
+    .mn-wrap .r-panel .r-panel-inner .education .container {
+        display: block;
+    }
+
+    .mn-wrap .r-panel .r-panel-inner .experience .box,
+    .mn-wrap .r-panel .r-panel-inner .education .box {
+        width: unset;
+        margin-right: unset;
+    }
+
+    .mn-wrap .mn-wrap-pad {
+        padding-bottom: unset;
+    }
+}
