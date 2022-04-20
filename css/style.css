@@ -1,21 +1,23 @@
 @charset "utf-8";
 html {
- overflow-x:hidden;
- padding:0;
- margin:0
+    overflow-x:hidden;
+    padding:0;
+    margin:0;
 }
+
 body {
- font-family:mulish;
- font-size:15px;
- line-height:30px;
- letter-spacing:.5px;
- word-wrap:break-word;
- font-weight:400;
- background-color:#fff;
- color:#767676
+    font-family:mulish;
+    font-size:15px;
+    line-height:30px;
+    letter-spacing:.5px;
+    word-wrap:break-word;
+    font-weight:400;
+    background-color:#fff;
+    color:#767676;
 }
+
 body::-webkit-scrollbar {
- width:0
+    width:0
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,13 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 svg {
- fill:currentcolor;
- width:15px;
- height:15px
+    fill:currentcolor;
+    width:15px;
+    height:15px
 }
 img.svg {
- width:15px;
- height:15px
+    width:15px;
+    height:15px
 }
 
 .mn-wrap {
@@ -47,6 +49,10 @@ img.svg {
 
 .mn-wrap .mn-flex {
     display: flex;
+}
+
+.mn-wrap .mn-full-width {
+    width: 100% !important;
 }
 
 .mn-wrap .mn-horizontal {
@@ -282,7 +288,8 @@ img.svg {
 }
 
 .mn-wrap .r-panel .about .skills ul {
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .mn-wrap .mn-wrap-highlight {
@@ -314,12 +321,14 @@ img.svg {
     border-radius: 100%;
 }
 
+.mn-wrap .r-panel .r-panel-inner .training .logo,
 .mn-wrap .r-panel .r-panel-inner .experience .logo,
 .mn-wrap .r-panel .r-panel-inner .education .logo {
     width: 4rem;
     height: 4rem;
     position: relative;
 }
+.mn-wrap .r-panel .r-panel-inner .training .container,
 .mn-wrap .r-panel .r-panel-inner .experience .container,
 .mn-wrap .r-panel .r-panel-inner .education .container {
     display: flex;
@@ -331,6 +340,7 @@ img.svg {
     padding: 2rem;
 }
 
+.mn-wrap .r-panel .r-panel-inner .training .box,
 .mn-wrap .r-panel .r-panel-inner .education .box {
     width: 50%;
     padding: 2rem;
@@ -354,7 +364,13 @@ img.svg {
     border-radius: 5%;
 }
 
-
+.mn-wrap .r-panel .r-panel-inner .training li .image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 6rem;
+    position: relative;
+}
 
 /* mobile */
 .mn-wrap .nav-mobile .mn_topbar {
@@ -390,6 +406,12 @@ img.svg {
 @media(max-width: 768px) { 
     .mn-wrap .nav-mobile {
         display: block;
+        z-index: 999;
+        position: fixed;
+        float: right;
+        width: 100%;
+        background: #fff;
+        top: 0;
     }
 
     .mn-wrap .l-panel {
@@ -399,6 +421,11 @@ img.svg {
     .mn-wrap .r-panel {
         width: 100%;
         float: left;
+    }
+
+    .mn-wrap .r-panel .r-panel-inner .container{
+        width: 90%;
+        margin: auto;
     }
 
     .mn-wrap .home_content {
@@ -412,22 +439,32 @@ img.svg {
         margin-left: 0;
     }
 
+    .mn-wrap .home_content .details .name {
+        font-size: 30px;
+    }
+
+    .mn-wrap .home_content .details .job {
+        margin-top: 0;
+    }
+
     .mn-wrap .r-panel .container {
         padding: 0;
     }
 
+    .mn-wrap .r-panel .r-panel-inner .training .container, 
     .mn-wrap .r-panel .r-panel-inner .experience .container, 
     .mn-wrap .r-panel .r-panel-inner .education .container {
         display: block;
     }
 
+    .mn-wrap .r-panel .r-panel-inner .training .box,
     .mn-wrap .r-panel .r-panel-inner .experience .box,
     .mn-wrap .r-panel .r-panel-inner .education .box {
         width: unset;
         margin-right: unset;
     }
 
-    .mn-wrap .mn-wrap-pad {
-        padding-bottom: unset;
+    .mn-wrap .r-panel .about .skills ul {
+        justify-content: center;
     }
 }
