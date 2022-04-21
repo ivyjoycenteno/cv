@@ -76,9 +76,9 @@
                                     <p class="job">Web developer</p>
                                     <div class="social">
                                         <ul>
-                                            <li><a href="https://twitter.com/icent_csi"><i class="fa-brands fa-twitter-square fa-lg"></i></a></li>
-                                            <li><a href="https://linkedin.com/in/ijcenteno"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
-                                            <li><a href="https://github.com/ivyjoycenteno"><i class="fa-brands fa-github fa-lg"></i></a></li>
+                                            <li><a href="https://twitter.com/icent_csi" target="_blank"><i class="fa-brands fa-twitter-square fa-lg"></i></a></li>
+                                            <li><a href="https://linkedin.com/in/ijcenteno" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                                            <li><a href="https://github.com/ivyjoycenteno" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -90,10 +90,16 @@
                     <div class="wrap-desc mn-wrap-pad">
                         <div class="container">
                             <div class="description">
-                                <h3>Hey there!</h3>
-                                I am a Web developer for over a decade now and continually learning new tech stack which is fun and enthusiastic. 
-                                    I have experiences on UI design through wireframing and prototyping, frontend and backend coding, and just completed a course on API designing and management.
-
+                                <h3>Hello there, glad that you are here!</h3>
+                                <span>
+                                    I am a Web developer with over a decade of experience in the industry. I am fortunate enough to be involved in
+                                    projects related to UI design, wireframing and prototyping, front-end development, back-end coding, system
+                                    architecture and DevOps.
+                                </span>
+                                <span>
+                                    I enjoy spending a portion of my spare time learning and experimenting with new tech stacks.
+                                    My recent journey enabled me to complete the course Learn Mulesoft: Master the development of APIs.
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -162,12 +168,14 @@
                 <div id="portfolio" class="portfolio mn-wrap-space-top">
                     <div class="container">
                         <h3>Portfolio</h3>
-                        <ul class="space-bottom">
+                        <ul class="space-bottom white-box">
                             <li class="space-bottom-sub">
-                                <div class="image" data-img-url="img/f2x.png" style="background-image: url(&quot;img/f2x.png&quot;);"></div>
+                                <div class="image" onclick="handleClick(this, event)" data-img-url="img/f2x.png" style="background-image: url(&quot;img/f2x.png&quot;);"></div>
                             </li>
                             <li><a href="https://grid.f2x.nl" target="_blank" class="dark">Grid.F2X.NL</a></li>
-                            <li>Back-office subscription billing and multi-tenant enabled web application of a Dutch telecommunication company.</li>
+                            <li>A back-office multi-tenant web application tailored with subscription analytics, billing and invoicing, collection 
+                                and basic accounting for a Dutch telecommunication company.
+                            </li>
                             <li class="tech-stack">
                                 <div class="card mn-margin-r"><i class="fa-brands fa-react"></i><span>React</span></div>
                                 <div class="card mn-margin-r">><span>React-Redux</span></div>
@@ -177,12 +185,12 @@
                                 <div class="card mn-margin-r">><span>Socket.IO</span></div>
                             </li>
                         </ul>
-                        <ul class="space-bottom">
+                        <ul class="space-bottom white-box">
                             <li class="space-bottom-sub">
-                                <div class="image" data-img-url="img/fiber.png" style="background-image: url(&quot;img/fiber.png&quot;);"></div>
+                                <div class="image" onclick="handleClick(this, event)" data-img-url="img/fiber.png" style="background-image: url(&quot;img/fiber.png&quot;);"></div>
                             </li>
                             <li><a href="https://my.fiber.nl" target="_blank" class="dark">My Fiber NL</a></li>
-                            <li>Client portal web application of the telecommunication subscription billing.</li>
+                            <li>A client-focused extension of Grid.F2X.NL for the purpose of billing.</li>
                             <li class="tech-stack">
                                 <div class="card mn-margin-r"><i class="fa-brands fa-vuejs"></i><span>Vue JS</span></div>
                                 <div class="card mn-margin-r">><span>VueX</span></div>
@@ -191,11 +199,12 @@
                                 <div class="card mn-margin-r">><span>MySQL</span></div>
                             </li>
                         </ul>
-                        <ul class="space-bottom">
+                        <ul class="space-bottom white-box">
                             <li class="dark">QOS-IT</a></li>
-                            <li>Online course application and accreditation organization through providing badges for the course takers or 
-                                professionals who passed certain exams and meet the requirements, one of these is by scanning existing certifications 
-                                via google vision AI, which is integrated with the app.</li>
+                            <li>
+                                Online Course and credential evaluation application with integrated computer vision and image recognition capable of scanning and verifying the authenticity 
+                                of badges issued to learners and professionals who successfully completed and met all the requirements for a course.
+                            </li>
                             <li class="tech-stack">
                                 <div class="card mn-margin-r"><i class="fa-brands fa-vuejs"></i><span>Vue3</span></div>
                                 <div class="card mn-margin-r"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
@@ -204,14 +213,16 @@
                                 <div class="card mn-margin-r">><span>GraphQL</span></div>
                             </li>
                         </ul>
-                        <ul class="space-bottom">
+                        <ul class="space-bottom white-box">
                             <li class="space-bottom-sub mn-flex">
-                                <div class="image mn-margin-r" style="background-image: url(&quot;img/medscan.png&quot;);"></div>
-                                <div class="image mn-margin-r" style="background-image: url(&quot;img/tenant-straumann.png&quot;);"></div>
-                                <div class="image" style="background-image: url(&quot;img/client-straumann.png&quot;);"></div>
+                                <div class="image mn-margin-r" onclick="handleClick(this, event)" style="background-image: url(&quot;img/medscan.png&quot;);"></div>
+                                <div class="image mn-margin-r" onclick="handleClick(this, event)" style="background-image: url(&quot;img/tenant-straumann.png&quot;);"></div>
+                                <div class="image" onclick="handleClick(this, event)" style="background-image: url(&quot;img/client-straumann.png&quot;);"></div>
                             </li>
                             <li class="dark">MedScan and Straumann</li>
-                            <li>Web applications for tracking, scanning and inventory of the products being delivered to and fro a destination. Both are multi-tenant enabled. Straumann has both client and tenant site, in which the former is for viewing of the transactions, stocks, and product list, and the latter is for tracking the items and managing inventory and stocks. </li>
+                            <li>Multi-tenant web applications for viewing transactions, stocks, tracking of products and managing the inventory.
+                                The applications are also capable of displaying information related to product delivery / destination.
+                            </li>
                             <li class="tech-stack">
                                 <div class="card mn-margin-r"><i class="fa-brands fa-figma"></i><span>Figma (Wireframing and Prototyping)</span></div>
                                 <div class="card mn-margin-r"><i class="fa-brands fa-vuejs"></i><span>Vue 3</span></div>
@@ -221,16 +232,16 @@
                                 <div class="card mn-margin-r">><span>MSSQL</span></div>
                             </li>
                         </ul>
-                        <ul class="space-bottom">
+                        <ul class="space-bottom white-box">
                             <li class="space-bottom-sub mn-flex">
-                                <div class="image mn-margin-r" style="background-image: url(&quot;img/myvitals.png&quot;);"></div>
-                                <div class="image mn-margin-r" style="background-image: url(&quot;img/mv-dashboard.png&quot;);"></div>
+                                <div class="image mn-margin-r" onclick="handleClick(this, event)" style="background-image: url(&quot;img/myvitals.png&quot;);"></div>
+                                <div class="image mn-margin-r" onclick="handleClick(this, event)" style="background-image: url(&quot;img/mv-dashboard.png&quot;);"></div>
                             </li>
-                            <li><a href="https://providerassist.com.au" target="_blank" class="dark">ProviderAssist - MyVitals and Acfi Assessment Hero</a></li>
+                            <li><a href="https://providerassist.com.au" target="_blank" class="dark">ProviderAssist - MyVitals and ACFI Assessment Hero</a></li>
                             <li>
-                                Created, developed and maintained Aged Care Specialist Solutions & Resources in the areas of Clinical, ACFI,
-                                Fees & Funding, benchmarking and management reporting system that allows aged care organisations to identify
-                                potential income, and track performance over time.
+                                A web application designed to cater Aged Care Specialist Solutions & Resources in the areas of Clinical ACFI, Fees & Funding, 
+                                benchmarking and management reporting system that allows aged care organisations to identify potential improvement, 
+                                and track performance over time.
                             </li>
                             <li class="tech-stack">
                                 <div class="card mn-margin-r"><i class="fa-brands fa-angular"></i><span>Angular</span></div>
@@ -246,13 +257,12 @@
                                 <div class="card mn-margin-r"><i class="fa-brands fa-salesforce"></i><span>Salesforce</span></div>
                             </li>
                         </ul>
-                        <ul>
+                        <ul class="white-box">
                             <li class="dark">Site Skills Training - Online Learning Portal</a></li>
                             <li>
-                                Created, developed and maintained multi-tenant application portal and learning management system
-                                which enabled organizations to view, enroll and administer learners, courses and other training
-                                materials catering industries for oil and gas, mining, construction, national workforce development,
-                                specialised training in Immersive Environments, and competency assurance.
+                                Multi-tenant application portal and learning management system which enabled organizations to view, enroll and administer learners,
+                                courses and other training materials catering industries for oil and gas, mining, construction,
+                                national workforce development, specialised training in Immersive Environments, and competency assurance. 
                             </li>
                             <li class="tech-stack">
                                 <div class="card mn-margin-r"><i class="fa-brands fa-java"></i><span>Java</span></div>
@@ -277,38 +287,38 @@
                     <div class="container">
                         <ul class="card box mn-margin-r">
                             <li class="logo">
-                                <a href="https://codingchiefs.com">
+                                <a href="https://codingchiefs.com" target="_blank">
                                     <div class="image" style="background-image: url(&quot;img/cc.png&quot;);"></div>
                                 </a>
                             </li>
                             <li class="company">
-                                <a href="https://codingchiefs.com">Codingchiefs</a>
+                                <a href="https://codingchiefs.com" target="_blank">Codingchiefs</a>
                             </li>
                             <li class="job">Lead Developer</li>
                             <li class="date">2020 - 2021</li>
                         </ul>
                         <ul class="card box mn-margin-r">
                             <li class="logo">
-                                <a href="https://www.beepo.com.au">
-                                    <div class="image" data-img-url="img/beepo.png"
-                                        style="background-image: url(&quot;img/beepo.png&quot;); width: 7rem;">
+                                <a href="https://www.beepo.com.au" target="_blank">
+                                    <div class="image" style="background-image: url(&quot;img/beepo.png&quot;); width: 7rem;">
                                     </div>
                                 </a>
                             </li>
                             <li class="company">
-                                <a href="https://www.beepo.com.au">Beepo Inc.</a>
+                                <a href="https://www.beepo.com.au" target="_blank">Beepo Inc.</a>
                             </li>
                             <li class="job">Senior Full Stack Developer</li>
                             <li class="date">2017 - 2019</li>
                         </ul>
                         <ul class="card box">
                             <li class="logo">
-                                <div class="image" data-img-url="img/sst.jpg"
-                                        style="background-image: url(&quot;img/sst.jpg&quot;);">
-                                </div>
+                                <a href="http://www.siteskillstraining.com" target="_blank">
+                                    <div class="image" style="background-image: url(&quot;img/sst.jpg&quot;);">
+                                    </div>
+                                </a>
                             </li>
                             <li class="company">
-                                Site Skills Training
+                                <a href="http://www.siteskillstraining.com" target="_blank">Site Skills Training</a>
                             </li>
                             <li class="job">Senior Full Stack Developer</li>
                             <li class="date">2014 - 2016</li>
@@ -377,7 +387,7 @@
                         <ul class="card box">
                             <li class="logo mn-flex mn-full-width">
                                 <div class="image" style="background-image: url(&quot;img/mulesoft.png&quot;);"></div>
-                                <div class="image" style="background-image: url(&quot;img/cert_mulesoft.jpg&quot;);"></div>
+                                <div class="image" onclick="handleClick(this, event)" style="background-image: url(&quot;img/cert_mulesoft.jpg&quot;);"></div>
                             </li>
                             <li style="padding-top: 5px;">Udemy Certificate of Completion</li>
                             <li>Learn Mulesoft: Master the development of APIs</li>
@@ -391,6 +401,17 @@
                 </div>
 
             </div>
+        </div>
+        <div class="ij-modal">
+            <div class="ij-wrap">
+                <div class="ij-content">
+                    <div class="image" style="background-image: url(&quot;img/client-straumann.png&quot;);"></div>
+                </div>
+                <div class="ij-close" id="ij-modal-close"><i class="fa-solid fa-circle-xmark"></i></div>
+
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/b97d48ee61.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script> 
