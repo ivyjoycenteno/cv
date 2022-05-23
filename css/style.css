@@ -47,6 +47,13 @@ img.svg {
     position: relative;
 }
 
+.mn-wrap .pers-logo{
+    background-position: left !important;
+    height: 5rem;
+    float: left;
+    width: 20%;
+}
+
 .mn-wrap .mn-flex {
     display: flex;
 }
@@ -82,7 +89,11 @@ img.svg {
 
 .mn-wrap .space-bottom-sub {
     margin-bottom: .5rem;
-} 
+}
+
+.mn-wrap .space-left-1 {
+    margin-left: 1rem;
+}
 
 .mn-wrap .l-panel {
     width: 25%;
